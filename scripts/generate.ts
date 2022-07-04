@@ -49,6 +49,11 @@ async function create(info: NeededInfo): Promise<[number, string]> {
   const originalIndexMarkdown = readFileSync(withTarget(`${targetName}/index.md`), 'utf8')
   const injectedMessage = injectMessage(info, originalIndexMarkdown)
   writeFileSync(withTarget(`${targetName}/index.md`), injectedMessage)
+  const pkg = {
+    name: targetName,
+    private: true,
+  }
+  writeFileSync(withTarget(`${targetName}/package.json`), JSON.stringify(pkg, null, 2))
   return [packagesCount, targetName]
 }
 
@@ -92,7 +97,7 @@ async function main() {
     const info = await ask()
     const [count, targetName] = await create(info)
     generateList(info, targetName)
-    generateReadme(count)
+    generateReadme(count + 1)
     logger.end('create success')
   })
 }
