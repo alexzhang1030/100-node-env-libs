@@ -17,7 +17,8 @@
     "start": "esno src/index.ts",
     "test": "vitest",
     "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "gen": "npx tsx ./scripts/generate.ts"
   },
   "devDependencies": {
     "@alexzzz/nl": "^0.0.3",
