@@ -4,10 +4,10 @@ import AutoImport from 'unplugin-auto-import/vite'
 export default defineConfig({
   plugins: [
     AutoImport({
-      imports: ['vitest']
-    })
+      imports: ['vitest'],
+    }),
   ],
   test: {
-    includeSource: ['src/*']
-  }
+    includeSource: ['src/*'],
+  },
 })

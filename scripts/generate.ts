@@ -18,22 +18,22 @@ async function ask(): Promise<NeededInfo> {
     {
       type: 'input',
       name: 'name',
-      message: 'what\'s this library\'s name?'
+      message: 'what\'s this library\'s name?',
     },
     {
       type: 'input',
       name: 'link',
-      message: 'what\'s this library\'s github link?'
+      message: 'what\'s this library\'s github link?',
     },
     {
       type: 'input',
       name: 'description',
-      message: 'what\'s this library\'s description?'
-    }
+      message: 'what\'s this library\'s description?',
+    },
   ] as Inquirer.Question[]
   const { name, link, description } = await Inquirer.prompt(questions)
   return {
-    name, link, description
+    name, link, description,
   }
 }
 
