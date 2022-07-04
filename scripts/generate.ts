@@ -1,7 +1,7 @@
 import { resolve } from 'path'
 import { readFileSync, readdirSync, writeFileSync } from 'fs'
 import MagicString from 'magic-string'
-import { copyFile, ensureDirSync } from 'fs-extra'
+import { copy, ensureDirSync } from 'fs-extra'
 import fg from 'fast-glob'
 import { NL } from '@alexzzz/nl'
 import Inquirer from 'inquirer'
@@ -44,13 +44,13 @@ async function create(info: NeededInfo): Promise<[number, string]> {
   ensureDirSync(withTarget(targetName))
   const copyTasks = []
   for (const file of files)
-    copyTasks.push(copyFile(file, withTarget(`${targetName}/${file.split('/').slice(2).join('/')}`)))
+    copyTasks.push(copy(file, withTarget(`${targetName}/${file.split('/').slice(2).join('/')}`)))
   await Promise.allSettled(copyTasks)
   const originalIndexMarkdown = readFileSync(withTarget(`${targetName}/index.md`), 'utf8')
   const injectedMessage = injectMessage(info, originalIndexMarkdown)
   writeFileSync(withTarget(`${targetName}/index.md`), injectedMessage)
   const pkg = {
-    name: targetName,
+    name: info.name,
     private: true,
   }
   writeFileSync(withTarget(`${targetName}/package.json`), JSON.stringify(pkg, null, 2))
