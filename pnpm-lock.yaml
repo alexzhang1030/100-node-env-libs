@@ -48,7 +48,7 @@ importers:
 
   packages/001.cac:
     specifiers:
-      mri: ^1.2.0
+      mri: 1.2.0
     devDependencies:
       mri: 1.2.0
 
