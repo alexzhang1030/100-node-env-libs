@@ -34,7 +34,7 @@ npx tsx ./index.ts
 Parsed Arguments
 
 ```
-{ args: [], options: { '--': [], type: 'index.ts' } }
+{ args: [], options: { '--': [], type: 'none' } }
 ```
 
 > 一个小猜想：
