@@ -1,4 +1,7 @@
 {
   "name": "cac",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "mri": "^1.2.0"
+  }
 }

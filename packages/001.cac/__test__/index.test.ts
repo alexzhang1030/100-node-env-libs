@@ -1,3 +1,4 @@
+import mri from 'mri'
 import cac, { CAC } from '../src'
 
 describe('cac init', () => {
@@ -30,3 +31,37 @@ describe('cac command', () => {
     expect(cli.commands[0].options[0].rawName).toBe('-o')
   })
 })
+
+test('mri test', () => {
+  const argv = ['_', 'd:\index.js', 'dev', 'server.ts', '--port', '3000', '--open']
+  const result = mri(argv.slice(2))
+  expect(result).toMatchInlineSnapshot(`
+    {
+      "_": [
+        "dev",
+        "server.ts",
+      ],
+      "open": true,
+      "port": 3000,
+    }
+  `)
+})
+
+describe('simple parse', () => {
+  const argv = ['_', 'd:\index.js', 'dev', 'server.ts', '--port', '3000', '--open']
+  test('easy parse', () => {
+    const cli = cac()
+    let count = 0
+    cli.command('dev', 'start Server')
+      .option('--port', 'specify port')
+      .option('--open', 'open browser')
+      .action(() => {
+        count += 1
+      })
+    cli.parse(argv)
+    expect(cli.commands[0].options[0].rawName).toBe('--port')
+    // if count == 1, it works
+    expect(count).toBe(1)
+  })
+})
+

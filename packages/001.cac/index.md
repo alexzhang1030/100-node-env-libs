@@ -210,8 +210,42 @@ class CAC {
 }
 ```
 
+总结来说，就是通过解析 `process.argv` 参数
 
+#### process.argv
 
+```bash
+node index.js -a --b c d
+```
+
+打印出来结果是这样的：
+
+```js
+['node absolute path', 'index.js absolute path', '-a', '--b', 'c', 'd']
+```
+
+#### mri
+
+mri 是一个解析命令行参数的极简小库，也是 cac 依赖的唯一的一个库
+
+mri 的用法大概是这样的：
+
+```ts
+const argv = ['_', 'd:\index.js', 'dev', 'server.ts', '--port', '3000', '--open']
+const result = mri(argv.slice(2))
+expect(result).toMatchInlineSnapshot(`
+    {
+      "_": [
+        "dev",
+        "server.ts",
+      ],
+      "open": true,
+      "port": 3000,
+    }
+  `)
+```
+
+借助 mri 的结果，我们就可以来实现 parse 了
 
 ### 3. Command 类
 
@@ -221,3 +255,9 @@ Command 类的主要作用就提供注册 Command 的能力
 
 ### 4. Option 类
 
+option 类就是用来储存 option 的 
+
+
+## 实现
+
+[简版实现](./realize.md)
