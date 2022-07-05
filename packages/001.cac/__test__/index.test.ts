@@ -34,7 +34,10 @@ describe('cac command', () => {
 
 test('mri test', () => {
   const argv = ['_', 'd:\index.js', 'dev', 'server.ts', '--port', '3000', '--open']
-  const result = mri(argv.slice(2))
+  const result = mri(argv.slice(2), {
+    boolean: ['open'],
+    string: ['port'],
+  })
   expect(result).toMatchInlineSnapshot(`
     {
       "_": [
@@ -42,7 +45,7 @@ test('mri test', () => {
         "server.ts",
       ],
       "open": true,
-      "port": 3000,
+      "port": "3000",
     }
   `)
 })
@@ -53,15 +56,37 @@ describe('simple parse', () => {
     const cli = cac()
     let count = 0
     cli.command('dev', 'start Server')
-      .option('--port', 'specify port')
-      .option('--open', 'open browser')
       .action(() => {
         count += 1
       })
     cli.parse(argv)
-    expect(cli.commands[0].options[0].rawName).toBe('--port')
     // if count == 1, it works
     expect(count).toBe(1)
+  })
+
+  test('if not match, wont execute action', () => {
+    const cli = cac()
+    let count = 0
+    cli.command('start', 'start Server').action(() => {
+      count++
+    })
+    expect(count).toBe(0)
+  })
+
+  test('support parse option', () => {
+    const cli = cac()
+    cli.command('dev').action((...args) => {
+      expect(args).toMatchInlineSnapshot(`
+        [
+          "server.ts",
+          {
+            "open": true,
+            "port": 3000,
+          },
+        ]
+      `)
+    })
+    cli.parse(argv)
   })
 })
 

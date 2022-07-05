@@ -1,13 +1,13 @@
 import Option from './Option'
 
 class Command {
-  commandAction?: (...args: any[]) => any
+  commandAction?: (...args: unknown[]) => any
   options: Option[] = []
 
   constructor(public rawName: string, public description: string) {
   }
 
-  action(callback: (...args: any[]) => any) {
+  action(callback: (...args: unknown[]) => any) {
     this.commandAction = callback
     return this
   }
@@ -16,6 +16,10 @@ class Command {
     const option = new Option(rawName, description)
     this.options.push(option)
     return this
+  }
+
+  isMatched(commandName: string) {
+    return this.rawName === commandName
   }
 }
 
