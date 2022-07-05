@@ -1,5 +1,4 @@
-import cac from '../src'
-import CAC from '../src/CAC'
+import cac, { CAC } from '../src'
 
 describe('cac init', () => {
   test('cac create', () => {
