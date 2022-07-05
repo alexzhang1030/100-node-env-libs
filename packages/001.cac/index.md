@@ -44,3 +44,8 @@ Parsed Arguments
 ### 其他用法
 
 [一些 demo](./usage.md)
+
+## 实现原理
+
+[目录结构](./dict_struct.md)
+
