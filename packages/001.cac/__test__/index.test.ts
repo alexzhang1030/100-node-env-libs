@@ -90,3 +90,13 @@ describe('simple parse', () => {
   })
 })
 
+describe('support brackets', () => {
+  test('in command name, square brackets is optional, angle brackets is required ', () => {
+    const cli = cac()
+    cli.command('find', 'find brackets').action((brackets, options) => {
+      expect(brackets).toMatchInlineSnapshot('"hello.ts"')
+      expect(options).toMatchInlineSnapshot('{}')
+    })
+    cli.parse(['_', '_', 'find', 'hello.ts'])
+  })
+})
