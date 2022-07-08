@@ -78,7 +78,7 @@ console.log(process.argv)
 import { resolve } from 'fs'
 import { createFile } from 'path-to-your-file'
 
-const fileName = process.argv[3]
+const fileName = process.argv[2]
 
 createFile(resolve(process.cwd(), fileName))
 ```
