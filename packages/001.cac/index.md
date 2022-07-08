@@ -4,6 +4,8 @@
 
 <p align="center"><samp>Simple yet powerful framework for building command-line apps.</samp></p>
 
+[我学到了什么](./output.md)
+
 ## Usage
 
 ### cac 初印象
