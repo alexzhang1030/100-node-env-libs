@@ -42,16 +42,16 @@ cac
   - `ISSUE_TEMPLATE.yaml`: github yaml 模板配置文件
 - [`.gitignore`](../../common/files/gitignore.md)
 - [`.prettierrc`](../../common/files/prettierrc.md)
-- [`LICENSE`](../../common/files/LICENSE.md)
+- [`LICENSE`](../../common/files/license.md)
 - README：项目介绍文件
 - circle.yaml: CircleCI 的配置文件
 - examples: 示例
 - index.compat.js: 主入口，主要是为了兼容 cjs
 - jest.config.js: jest 配置文件
-- mod.*: 兼容 deno
+- mod.\*: 兼容 deno
 - [`package.json`](../../common/files/package_json.md)
 - rollup.config.js: rollup 配置文件（主要是打包用的）
 - tsconfig.json: TS 配置文件
 - scripts: 项目中用到的脚本
 - src: 项目主目录
-- yarn.lock: yarn 的依赖锁文件 
+- yarn.lock: yarn 的依赖锁文件
