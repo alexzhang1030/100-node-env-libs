@@ -9,3 +9,4 @@
 - [package_json](./files/package_json.md)
 - [tsconfig_json](./files/tsconfig_json.md)
 - [eslintrc](./files/eslintrc.md)
+- [package-lock_json](./files/package-lock_json.md)
