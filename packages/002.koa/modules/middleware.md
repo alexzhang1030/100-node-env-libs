@@ -38,4 +38,4 @@ function compose(middleware) {
 
 所谓洋葱模型，就是按照顺序调用了每一个 `middleware` 函数，在 `next` 函数中，我们可以通过 `dispatch(i + 1)` 来调用下一个 `middleware` 函数。
 
-由于它使用了 `Promise` 进行 resolve 和 reject，一次你 Koa 中的函数都可以是异步的。
+由于它使用了 `Promise` 进行 resolve 和 reject，因此 Koa 中的函数都可以是异步的。
