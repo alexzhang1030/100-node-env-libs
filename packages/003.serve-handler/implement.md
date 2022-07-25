@@ -51,3 +51,7 @@ export function processRedirect(response: ServerResponse, target: string): void 
   response.end()
 }
 ```
+
+#### rewrites
+
+那么在极简的实现中，redirects 和 rewrites 的实现原理也是差不多的
