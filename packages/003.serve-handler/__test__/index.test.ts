@@ -21,3 +21,11 @@ test('run', async () => {
   const expected = readFileSync(resolve(cwd, 'test.html'), 'utf8')
   expect(result).toEqual(expected)
 })
+
+test('404', async () => {
+  const url = await getURL()
+  const res = await fetch(`${url}/test_not_really_exist.html`)
+  expect(res.status).toMatchInlineSnapshot('404')
+  const expected = readFileSync(resolve(cwd, '404.html'), 'utf8')
+  expect(await res.text()).toEqual(expected)
+})
