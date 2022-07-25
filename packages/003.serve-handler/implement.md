@@ -27,3 +27,27 @@ else
 ```
 
 #### redirect
+
+redirect 最简单的实现 —— 根据配置文件来判断，并走 301 即可
+
+```ts
+// redirect 的结构： { from: string, to: string }[]
+export default function (request: IncomingMessage, response: ServerResponse, opts?: Opts) {
+  // process redirect
+  if (opts && opts.redirect) {
+    const { redirect } = opts
+    const redirectTarget = redirect.find(item => item.origin === relatedPath)
+    if (redirectTarget)
+      processRedirect(response, redirectTarget.target)
+  }
+}
+
+export function processRedirect(response: ServerResponse, target: string): void {
+  const defaultType = 301
+  // 处理即可
+  response.writeHead(defaultType, 'Moved Permanently', {
+    Location: target,
+  })
+  response.end()
+}
+```
