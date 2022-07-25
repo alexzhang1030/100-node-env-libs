@@ -1,6 +1,8 @@
 import { createReadStream, existsSync } from 'fs'
 import type { IncomingMessage, ServerResponse } from 'http'
 import { resolve } from 'path'
+import { processRedirect } from './redirect'
+import type { Opts } from './types'
 
 export function getCurrentWorkDir() {
   const cwd = process.cwd()
@@ -21,12 +23,23 @@ function processError(errorCode: keyof typeof ERROR_CODE_FILE, response: ServerR
   }
 }
 
-export default function (request: IncomingMessage, response: ServerResponse) {
+export default function (request: IncomingMessage, response: ServerResponse, opts?: Opts) {
   const cwd = getCurrentWorkDir()
-  const path = resolve(cwd, request.url!.slice(1))
+  const relatedPath = request.url!.slice(1)
+  const path = resolve(cwd, relatedPath)
   // process 404 error
-  if (!existsSync(path))
+  if (!existsSync(path)) {
     processError(404, response)
-  else
-    createReadStream(path).pipe(response)
+    return
+  }
+  // process redirect
+  if (opts && opts.redirect) {
+    const { redirect } = opts
+    const redirectTarget = redirect.find(item => item.origin === relatedPath)
+    if (redirectTarget) {
+      processRedirect(response, redirectTarget.target)
+      return
+    }
+  }
+  createReadStream(path).pipe(response)
 }

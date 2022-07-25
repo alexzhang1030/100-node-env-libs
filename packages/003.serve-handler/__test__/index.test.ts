@@ -7,7 +7,14 @@ import handler, { getCurrentWorkDir } from '../src'
 
 function getURL() {
   const server = createServer((req, res) => {
-    handler(req, res)
+    handler(req, res, {
+      redirect: [
+        {
+          origin: 'need_redirect.html',
+          target: 'test.html',
+        },
+      ],
+    })
   })
   return listen(server)
 }
@@ -27,5 +34,12 @@ test('404', async () => {
   const res = await fetch(`${url}/test_not_really_exist.html`)
   expect(res.status).toMatchInlineSnapshot('404')
   const expected = readFileSync(resolve(cwd, '404.html'), 'utf8')
+  expect(await res.text()).toEqual(expected)
+})
+
+test('redirect', async () => {
+  const url = await getURL()
+  const res = await fetch(`${url}/need_redirect.html`)
+  const expected = readFileSync(resolve(cwd, 'test.html'), 'utf8')
   expect(await res.text()).toEqual(expected)
 })
