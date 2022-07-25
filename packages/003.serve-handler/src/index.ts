@@ -9,6 +9,6 @@ export function getCurrentWorkDir() {
 
 export default function (request: IncomingMessage, response: ServerResponse) {
   const cwd = getCurrentWorkDir()
-  const path = resolve(cwd, 'test.html')
+  const path = resolve(cwd, request.url!.slice(1))
   createReadStream(path).pipe(response)
 }
