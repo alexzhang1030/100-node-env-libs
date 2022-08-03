@@ -19,7 +19,7 @@ importers:
       inquirer: 9.0.2
       lint-staged: 13.0.3
       magic-string: 0.26.2
-      mlly: 0.5.5
+      mlly: 0.5.6
       node-fetch: ^3.2.9
       pnpm: 7.8.0
       test-listen: ^1.1.0
@@ -43,7 +43,7 @@ importers:
       inquirer: 9.0.2
       lint-staged: 13.0.3
       magic-string: 0.26.2
-      mlly: 0.5.5
+      mlly: 0.5.6
       node-fetch: 3.2.9
       pnpm: 7.8.0
       test-listen: 1.1.0
@@ -2913,10 +2913,11 @@ packages:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
-  /mlly/0.5.5:
-    resolution: {integrity: sha512-2R4JT/SxRDPexomw4rmHYY/gWAGmL9Kkq1OR76Ua6w+P340a1aBDTWzKo2kAlxzrG82OdXs5VB9Lmcmyit0Obg==}
+  /mlly/0.5.6:
+    resolution: {integrity: sha512-/g58nvGXv/6D9ob7uc1WKbYA7Uup/KS1gj1ZHW4ASeKL0Z9XxADvDmyhDK0UkOLmkVO5az85LNu8ToOwaYGgfg==}
     dependencies:
-      pathe: 0.3.2
+      acorn: 8.8.0
+      pathe: 0.3.3
       pkg-types: 0.3.3
     dev: true
 
@@ -3236,8 +3237,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe/0.3.2:
-    resolution: {integrity: sha512-qhnmX0TOqlCvdWWTkoM83wh5J8fZ2yhbDEc9MlsnAEtEc+JCwxUKEwmd6pkY9hRe6JR1Uecbc14VcAKX2yFSTA==}
+  /pathe/0.3.3:
+    resolution: {integrity: sha512-x3nrPvG0HDSDzUiJ0WqtzhN4MD+h5B+dFJ3/qyxVuARlr4Y3aJv8gri2cZzp9Z8sGs2a+aG9gNbKngh3gme57A==}
     dev: true
 
   /pathval/1.1.1:
@@ -3263,8 +3264,8 @@ packages:
     resolution: {integrity: sha512-6AJcCMnjUQPQv/Wk960w0TOmjhdjbeaQJoSKWRQv9N3rgkessCu6J0Ydsog/nw1MbpnxHuPzYbfOn2KmlZO1FA==}
     dependencies:
       jsonc-parser: 3.0.0
-      mlly: 0.5.5
-      pathe: 0.3.2
+      mlly: 0.5.6
+      pathe: 0.3.3
     dev: true
 
   /pluralize/8.0.0:
@@ -3951,8 +3952,8 @@ packages:
       fast-glob: 3.2.11
       local-pkg: 0.4.2
       magic-string: 0.26.2
-      mlly: 0.5.5
-      pathe: 0.3.2
+      mlly: 0.5.6
+      pathe: 0.3.3
       scule: 0.3.2
       strip-literal: 0.4.0
       unplugin: 0.8.0
