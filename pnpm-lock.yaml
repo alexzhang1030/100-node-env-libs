@@ -9,7 +9,7 @@ importers:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
       '@types/fs-extra': 9.0.13
-      '@types/inquirer': 8.2.1
+      '@types/inquirer': 8.2.2
       '@types/node': 18.0.1
       '@types/test-listen': ^1.1.0
       eslint: 8.21.0
@@ -33,7 +33,7 @@ importers:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
       '@types/fs-extra': 9.0.13
-      '@types/inquirer': 8.2.1
+      '@types/inquirer': 8.2.2
       '@types/node': 18.0.1
       '@types/test-listen': 1.1.0
       eslint: 8.21.0
@@ -474,11 +474,10 @@ packages:
       '@types/node': 18.0.1
     dev: true
 
-  /@types/inquirer/8.2.1:
-    resolution: {integrity: sha512-wKW3SKIUMmltbykg4I5JzCVzUhkuD9trD6efAmYgN2MrSntY0SMRQzEnD3mkyJ/rv9NLbTC7g3hKKE86YwEDLw==}
+  /@types/inquirer/8.2.2:
+    resolution: {integrity: sha512-HXoFOl+KS4yvmUjisi83VpuSBOeeXIzdJfoT/v2pUruqybpHy0Dz1DyXy3E2jNH0cSVKJZV92VOnFBwJR6k83A==}
     dependencies:
       '@types/through': 0.0.30
-      rxjs: 7.5.5
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -3488,12 +3487,6 @@ packages:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
       queue-microtask: 1.2.3
-    dev: true
-
-  /rxjs/7.5.5:
-    resolution: {integrity: sha512-sy+H0pQofO95VDmFLzyaw9xNJU4KTRSwQIGM6+iG3SypAtCiLDzpeG8sJrNCWn2Up9km+KhkvTdbkrdy+yzZdw==}
-    dependencies:
-      tslib: 2.4.0
     dev: true
 
   /rxjs/7.5.6:
