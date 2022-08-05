@@ -9,14 +9,14 @@ importers:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
       '@types/fs-extra': 9.0.13
-      '@types/inquirer': 8.2.2
+      '@types/inquirer': 9.0.0
       '@types/node': 18.0.1
       '@types/test-listen': ^1.1.0
       eslint: 8.21.0
       fast-glob: 3.2.11
       fs-extra: 10.1.0
       husky: 8.0.1
-      inquirer: 9.0.2
+      inquirer: 9.1.0
       lint-staged: 13.0.3
       magic-string: 0.26.2
       mlly: 0.5.7
@@ -33,14 +33,14 @@ importers:
       '@commitlint/cli': 17.0.3
       '@commitlint/config-conventional': 17.0.3
       '@types/fs-extra': 9.0.13
-      '@types/inquirer': 8.2.2
+      '@types/inquirer': 9.0.0
       '@types/node': 18.0.1
       '@types/test-listen': 1.1.0
       eslint: 8.21.0
       fast-glob: 3.2.11
       fs-extra: 10.1.0
       husky: 8.0.1
-      inquirer: 9.0.2
+      inquirer: 9.1.0
       lint-staged: 13.0.3
       magic-string: 0.26.2
       mlly: 0.5.7
@@ -474,10 +474,11 @@ packages:
       '@types/node': 18.0.1
     dev: true
 
-  /@types/inquirer/8.2.2:
-    resolution: {integrity: sha512-HXoFOl+KS4yvmUjisi83VpuSBOeeXIzdJfoT/v2pUruqybpHy0Dz1DyXy3E2jNH0cSVKJZV92VOnFBwJR6k83A==}
+  /@types/inquirer/9.0.0:
+    resolution: {integrity: sha512-4sncHTq3AWbLWZOs83DQlrKxhdehs2AW79Dp1amoGGc6B+oJal7fQJa/EO1Taa5CQLSywEMAgw2SFB1fZIX3PQ==}
     dependencies:
       '@types/through': 0.0.30
+      rxjs: 7.5.6
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -2379,8 +2380,8 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /inquirer/9.0.2:
-    resolution: {integrity: sha512-AqmDHmz3bIe573OiM4svTZzajBzff1xpuzYAimW8gjzW5ncuPllWB8t/GKl+NSuKRJaKyIF2bU2RCx8H1dwqyQ==}
+  /inquirer/9.1.0:
+    resolution: {integrity: sha512-eukdjrBljg9t55ZnvJjvGi1OyYEzVBFsO/8o5d2MV3mc28u3x4X2kS4eJ/+9U10KiREfPkEBSeCrU/S2G/uRtw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       ansi-escapes: 5.0.0
