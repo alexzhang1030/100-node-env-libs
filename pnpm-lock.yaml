@@ -21,7 +21,7 @@ importers:
       magic-string: 0.26.2
       mlly: 0.5.7
       node-fetch: ^3.2.9
-      pnpm: 7.8.0
+      pnpm: 7.9.0
       test-listen: ^1.1.0
       tsx: 3.8.0
       typescript: 4.7.4
@@ -45,7 +45,7 @@ importers:
       magic-string: 0.26.2
       mlly: 0.5.7
       node-fetch: 3.2.9
-      pnpm: 7.8.0
+      pnpm: 7.9.0
       test-listen: 1.1.0
       tsx: 3.8.0
       typescript: 4.7.4
@@ -1108,8 +1108,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      is-text-path: 1.0.1
       JSONStream: 1.3.5
+      is-text-path: 1.0.1
       lodash: 4.17.21
       meow: 8.1.2
       split2: 3.2.2
@@ -3273,8 +3273,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.8.0:
-    resolution: {integrity: sha512-jzb9/gto4nwuVA2itTRk0PJhuaZcA1NBRB298UzXhqKZQMjtHCS+KLzh7RWk5n3g+KnMg5FHr6Mwg1L62dBz1A==}
+  /pnpm/7.9.0:
+    resolution: {integrity: sha512-xkIVw73yJm/h5M4VvFIS5Q+gQCRDrp3r92g58PtcCK86aZCa7EQ6q6ivdfTAz0KsAVgloA6Anub28n6wju5v3w==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
