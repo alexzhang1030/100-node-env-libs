@@ -19,7 +19,7 @@ importers:
       inquirer: 9.1.0
       lint-staged: 13.0.3
       magic-string: 0.26.2
-      mlly: 0.5.7
+      mlly: 0.5.10
       node-fetch: ^3.2.9
       pnpm: 7.9.0
       test-listen: ^1.1.0
@@ -43,7 +43,7 @@ importers:
       inquirer: 9.1.0
       lint-staged: 13.0.3
       magic-string: 0.26.2
-      mlly: 0.5.7
+      mlly: 0.5.10
       node-fetch: 3.2.9
       pnpm: 7.9.0
       test-listen: 1.1.0
@@ -2913,12 +2913,13 @@ packages:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
-  /mlly/0.5.7:
-    resolution: {integrity: sha512-rz+n2i9862ymLH+UDlHpsuTVyCIAs+9WejS2De2VUlAKdpq8OJ9x/C2M7nNUMLEW1H+D6n0uZlpz8+tMGxCmyQ==}
+  /mlly/0.5.10:
+    resolution: {integrity: sha512-mY6i+bwcgn0XAdZTiiBt6kyoUjLsm3Cuv0T4CchQJcq/UCSUcGPapSxc4g7whtIsUfcsJ2kGqZAdmqCF/VNC/Q==}
     dependencies:
       acorn: 8.8.0
-      pathe: 0.3.3
+      pathe: 0.3.4
       pkg-types: 0.3.3
+      ufo: 0.8.5
     dev: true
 
   /mri/1.2.0:
@@ -3237,8 +3238,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe/0.3.3:
-    resolution: {integrity: sha512-x3nrPvG0HDSDzUiJ0WqtzhN4MD+h5B+dFJ3/qyxVuARlr4Y3aJv8gri2cZzp9Z8sGs2a+aG9gNbKngh3gme57A==}
+  /pathe/0.3.4:
+    resolution: {integrity: sha512-YWgqEdxf36R6vcsyj0A+yT/rDRPe0wui4J9gRR7T4whjU5Lx/jZOr75ckEgTNaLVQABAwsrlzHRpIKcCdXAQ5A==}
     dev: true
 
   /pathval/1.1.1:
@@ -3264,8 +3265,8 @@ packages:
     resolution: {integrity: sha512-6AJcCMnjUQPQv/Wk960w0TOmjhdjbeaQJoSKWRQv9N3rgkessCu6J0Ydsog/nw1MbpnxHuPzYbfOn2KmlZO1FA==}
     dependencies:
       jsonc-parser: 3.0.0
-      mlly: 0.5.7
-      pathe: 0.3.3
+      mlly: 0.5.10
+      pathe: 0.3.4
     dev: true
 
   /pluralize/8.0.0:
@@ -3929,6 +3930,10 @@ packages:
     hasBin: true
     dev: true
 
+  /ufo/0.8.5:
+    resolution: {integrity: sha512-e4+UtA5IRO+ha6hYklwj6r7BjiGMxS0O+UaSg9HbaTefg4kMkzj4tXzEBajRR+wkxf+golgAWKzLbytCUDMJAA==}
+    dev: true
+
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
     dependencies:
@@ -3946,8 +3951,8 @@ packages:
       fast-glob: 3.2.11
       local-pkg: 0.4.2
       magic-string: 0.26.2
-      mlly: 0.5.7
-      pathe: 0.3.3
+      mlly: 0.5.10
+      pathe: 0.3.4
       scule: 0.3.2
       strip-literal: 0.4.0
       unplugin: 0.8.1
