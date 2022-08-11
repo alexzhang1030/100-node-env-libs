@@ -23,7 +23,7 @@ importers:
       node-fetch: ^3.2.9
       pnpm: 7.9.0
       test-listen: ^1.1.0
-      tsx: 3.8.0
+      tsx: 3.8.2
       typescript: 4.7.4
       unplugin-auto-import: 0.11.1
       vitest: 0.21.1
@@ -47,7 +47,7 @@ importers:
       node-fetch: 3.2.9
       pnpm: 7.9.0
       test-listen: 1.1.0
-      tsx: 3.8.0
+      tsx: 3.8.2
       typescript: 4.7.4
       unplugin-auto-import: 0.11.1
       vitest: 0.21.1
@@ -340,8 +340,8 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@esbuild-kit/cjs-loader/2.3.1:
-    resolution: {integrity: sha512-ov6ALYD9xZSPoo5mmGOQtEC/b0xXeUlPy65p8aHMHLF4DfBEe8Y+iquH2lTDsy6Iskc1uMTadF+SVADTSTNJMA==}
+  /@esbuild-kit/cjs-loader/2.3.3:
+    resolution: {integrity: sha512-Rt4O1mXlPEDVxvjsHLgbtHVdUXYK9C1/6ThpQnt7FaXIjUOsI6qhHYMgALhNnlIMZffag44lXd6Dqgx3xALbpQ==}
     dependencies:
       '@esbuild-kit/core-utils': 2.1.0
       get-tsconfig: 4.1.0
@@ -354,8 +354,8 @@ packages:
       source-map-support: 0.5.21
     dev: true
 
-  /@esbuild-kit/esm-loader/2.4.1:
-    resolution: {integrity: sha512-6x44rygVfNODm27v0RW3wX5y61mqSrXDvB39G0nomgWWqxG3mjiKtPSwrFppdkrA39QIqDgVlD4gJmPOxnleSw==}
+  /@esbuild-kit/esm-loader/2.4.2:
+    resolution: {integrity: sha512-N9dPKAj8WOx6djVnStgILWXip4fjDcBk9L7azO0/uQDpu8Ee0eaL78mkN4Acid9BzvNAKWwdYXFJZnsVahNEew==}
     dependencies:
       '@esbuild-kit/core-utils': 2.1.0
       get-tsconfig: 4.1.0
@@ -3871,13 +3871,13 @@ packages:
       typescript: 4.7.4
     dev: true
 
-  /tsx/3.8.0:
-    resolution: {integrity: sha512-PcvTwRXTm6hDWfPihA4n5WW/9SmgFNxKaDKqvLLG+FKNEPA4crsipChzC7PVozPtdOaMfR5QctDlkC/hKoIsxw==}
+  /tsx/3.8.2:
+    resolution: {integrity: sha512-Jf9izq3Youry5aEarspf6Gm+v/IE2A2xP7YVhtNH1VSCpM0jjACg7C3oD5rIoLBfXWGJSZj4KKC2bwE0TgLb2Q==}
     hasBin: true
     dependencies:
-      '@esbuild-kit/cjs-loader': 2.3.1
+      '@esbuild-kit/cjs-loader': 2.3.3
       '@esbuild-kit/core-utils': 2.1.0
-      '@esbuild-kit/esm-loader': 2.4.1
+      '@esbuild-kit/esm-loader': 2.4.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
