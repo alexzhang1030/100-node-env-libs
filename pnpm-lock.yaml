@@ -11,7 +11,7 @@ importers:
       '@types/fs-extra': 9.0.13
       '@types/inquirer': 9.0.0
       '@types/node': 18.0.1
-      '@types/test-listen': ^1.1.0
+      '@types/test-listen': 1.1.0
       eslint: 8.22.0
       fast-glob: 3.2.11
       fs-extra: 10.1.0
@@ -20,9 +20,9 @@ importers:
       lint-staged: 13.0.3
       magic-string: 0.26.2
       mlly: 0.5.12
-      node-fetch: ^3.2.9
+      node-fetch: 3.2.10
       pnpm: 7.9.0
-      test-listen: ^1.1.0
+      test-listen: 1.1.0
       tsx: 3.8.2
       typescript: 4.7.4
       unplugin-auto-import: 0.11.1
@@ -44,7 +44,7 @@ importers:
       lint-staged: 13.0.3
       magic-string: 0.26.2
       mlly: 0.5.12
-      node-fetch: 3.2.9
+      node-fetch: 3.2.10
       pnpm: 7.9.0
       test-listen: 1.1.0
       tsx: 3.8.2
@@ -2954,8 +2954,8 @@ packages:
     engines: {node: '>=10.5.0'}
     dev: true
 
-  /node-fetch/3.2.9:
-    resolution: {integrity: sha512-/2lI+DBecVvVm9tDhjziTVjo2wmTsSxSk58saUYP0P/fRJ3xxtfMDY24+CKTkfm0Dlhyn3CSXNL0SoRiCZ8Rzg==}
+  /node-fetch/3.2.10:
+    resolution: {integrity: sha512-MhuzNwdURnZ1Cp4XTazr69K0BTizsBroX7Zx3UgDSVcZYKF/6p0CBe4EUb/hLqmzVhl0UpYfgRljQ4yxE+iCxA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       data-uri-to-buffer: 4.0.0
