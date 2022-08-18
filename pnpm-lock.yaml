@@ -19,7 +19,7 @@ importers:
       inquirer: 9.1.0
       lint-staged: 13.0.3
       magic-string: 0.26.2
-      mlly: 0.5.12
+      mlly: 0.5.13
       node-fetch: 3.2.10
       pnpm: 7.9.3
       test-listen: 1.1.0
@@ -43,7 +43,7 @@ importers:
       inquirer: 9.1.0
       lint-staged: 13.0.3
       magic-string: 0.26.2
-      mlly: 0.5.12
+      mlly: 0.5.13
       node-fetch: 3.2.10
       pnpm: 7.9.3
       test-listen: 1.1.0
@@ -2913,8 +2913,8 @@ packages:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
-  /mlly/0.5.12:
-    resolution: {integrity: sha512-8moXGh6Hfy2Nmys3DDEm4CuxDBk5Y7Lk1jQ4JcwW0djO9b+SCKTpw0enIQeZIuEnPljdxHSGmcbXU9hpIIEYeQ==}
+  /mlly/0.5.13:
+    resolution: {integrity: sha512-0SK2fqoan+PMjADs4I2egAtrtNtpjqRez6PDTCeAdGjUQNJCvO5o9v2NEq52WA1jFmMU97qBr/JgdvCquehDbA==}
     dependencies:
       acorn: 8.8.0
       pathe: 0.3.4
@@ -3265,7 +3265,7 @@ packages:
     resolution: {integrity: sha512-6AJcCMnjUQPQv/Wk960w0TOmjhdjbeaQJoSKWRQv9N3rgkessCu6J0Ydsog/nw1MbpnxHuPzYbfOn2KmlZO1FA==}
     dependencies:
       jsonc-parser: 3.0.0
-      mlly: 0.5.12
+      mlly: 0.5.13
       pathe: 0.3.4
     dev: true
 
@@ -3951,7 +3951,7 @@ packages:
       fast-glob: 3.2.11
       local-pkg: 0.4.2
       magic-string: 0.26.2
-      mlly: 0.5.12
+      mlly: 0.5.13
       pathe: 0.3.4
       scule: 0.3.2
       strip-literal: 0.4.0
