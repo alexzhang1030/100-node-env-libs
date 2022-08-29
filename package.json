@@ -16,7 +16,7 @@
     "gen": "npx tsx ./scripts/generate.ts"
   },
   "devDependencies": {
-    "@alexzzz/eslint-config": "1.3.0",
+    "@alexzzz/eslint-config": "1.4.0",
     "@alexzzz/nl": "0.0.3",
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
