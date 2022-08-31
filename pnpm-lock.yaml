@@ -18,7 +18,7 @@ importers:
       husky: 8.0.1
       inquirer: 9.1.0
       lint-staged: 13.0.3
-      magic-string: 0.26.2
+      magic-string: 0.26.3
       mlly: 0.5.14
       node-fetch: 3.2.10
       pnpm: 7.9.3
@@ -42,7 +42,7 @@ importers:
       husky: 8.0.1
       inquirer: 9.1.0
       lint-staged: 13.0.3
-      magic-string: 0.26.2
+      magic-string: 0.26.3
       mlly: 0.5.14
       node-fetch: 3.2.10
       pnpm: 7.9.3
@@ -2809,8 +2809,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /magic-string/0.26.2:
-    resolution: {integrity: sha512-NzzlXpclt5zAbmo6h6jNc8zl2gNRGHvmsZW4IvZhTC4W7k4OlLP+S5YLussa/r3ixNT66KOQfNORlXHSOy/X4A==}
+  /magic-string/0.26.3:
+    resolution: {integrity: sha512-u1Po0NDyFcwdg2nzHT88wSK0+Rih0N1M+Ph1Sp08k8yvFFU3KR72wryS7e1qMPJypt99WB7fIFVCA92mQrMjrg==}
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
@@ -3960,7 +3960,7 @@ packages:
       escape-string-regexp: 5.0.0
       fast-glob: 3.2.11
       local-pkg: 0.4.2
-      magic-string: 0.26.2
+      magic-string: 0.26.3
       mlly: 0.5.14
       pathe: 0.3.5
       scule: 0.3.2
@@ -3996,7 +3996,7 @@ packages:
       '@antfu/utils': 0.5.2
       '@rollup/pluginutils': 4.2.1
       local-pkg: 0.4.2
-      magic-string: 0.26.2
+      magic-string: 0.26.3
       unimport: 0.6.7
       unplugin: 0.9.3
     transitivePeerDependencies:
