@@ -16,7 +16,7 @@ importers:
       fast-glob: 3.2.12
       fs-extra: 10.1.0
       husky: 8.0.1
-      inquirer: 9.1.1
+      inquirer: 9.1.2
       lint-staged: 13.0.3
       magic-string: 0.26.3
       mlly: 0.5.14
@@ -40,7 +40,7 @@ importers:
       fast-glob: 3.2.12
       fs-extra: 10.1.0
       husky: 8.0.1
-      inquirer: 9.1.1
+      inquirer: 9.1.2
       lint-staged: 13.0.3
       magic-string: 0.26.3
       mlly: 0.5.14
@@ -2390,8 +2390,8 @@ packages:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
     dev: true
 
-  /inquirer/9.1.1:
-    resolution: {integrity: sha512-hfS9EJ1pVkGNbYKqzdGwMj0Dqosd36Qvxd5pFy4657QT23gmtFTSqoYBisZR75DReeSMWPNa8J0Lf6TQCz8PvA==}
+  /inquirer/9.1.2:
+    resolution: {integrity: sha512-Hj2Ml1WpxKJU2npP2Rj0OURGkHV+GtNW2CwFdHDiXlqUBAUrWTcZHxCkFywX/XHzOS7wrG/kExgJFbUkVgyHzg==}
     engines: {node: '>=12.0.0'}
     dependencies:
       ansi-escapes: 5.0.0
