@@ -19,7 +19,7 @@ importers:
       inquirer: 9.1.2
       lint-staged: 13.0.3
       magic-string: 0.26.3
-      mlly: 0.5.14
+      mlly: 0.5.15
       node-fetch: 3.2.10
       pnpm: 7.12.0
       test-listen: 1.1.0
@@ -43,7 +43,7 @@ importers:
       inquirer: 9.1.2
       lint-staged: 13.0.3
       magic-string: 0.26.3
-      mlly: 0.5.14
+      mlly: 0.5.15
       node-fetch: 3.2.10
       pnpm: 7.12.0
       test-listen: 1.1.0
@@ -2647,8 +2647,8 @@ packages:
       semver: 7.3.7
     dev: true
 
-  /jsonc-parser/3.1.0:
-    resolution: {integrity: sha512-DRf0QjnNeCUds3xTjKlQQ3DpJD51GvDjJfnxUVWg6PZTo2otSm+slzNAxU/35hF8/oJIKoG9slq30JYOsF2azg==}
+  /jsonc-parser/3.2.0:
+    resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
     dev: true
 
   /jsonfile/6.1.0:
@@ -2923,12 +2923,12 @@ packages:
     resolution: {integrity: sha512-Jsjnk4bw3YJqYzbdyBiNsPWHPfO++UGG749Cxs6peCu5Xg4nrena6OVxOYxrQTqww0Jmwt+Ref8rggumkTLz9Q==}
     dev: true
 
-  /mlly/0.5.14:
-    resolution: {integrity: sha512-DgRgNUSX9NIxxCxygX4Xeg9C7GX7OUx1wuQ8cXx9o9LE0e9wrH+OZ9fcnrlEedsC/rtqry3ZhUddC759XD/L0w==}
+  /mlly/0.5.15:
+    resolution: {integrity: sha512-cA1DS4Va2t0h/1c044haUDubeWwlKrvToLbOT3Oprpr2tW5dJTObEIXDdONRN/ahKm0GWEPVeptbg0dlzl8gBQ==}
     dependencies:
       acorn: 8.8.0
-      pathe: 0.3.5
-      pkg-types: 0.3.4
+      pathe: 0.3.8
+      pkg-types: 0.3.5
       ufo: 0.8.5
     dev: true
 
@@ -3248,8 +3248,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /pathe/0.3.5:
-    resolution: {integrity: sha512-grU/QeYP0ChuE5kjU2/k8VtAeODzbernHlue0gTa27+ayGIu3wqYBIPGfP9r5xSqgCgDd4nWrjKXEfxMillByg==}
+  /pathe/0.3.8:
+    resolution: {integrity: sha512-c71n61F1skhj/jzZe+fWE9XDoTYjWbUwIKVwFftZ5IOgiX44BVkTkD+/803YDgR50tqeO4eXWxLyVHBLWQAD1g==}
     dev: true
 
   /pathval/1.1.1:
@@ -3271,12 +3271,12 @@ packages:
     hasBin: true
     dev: true
 
-  /pkg-types/0.3.4:
-    resolution: {integrity: sha512-s214f/xkRpwlwVBToWq9Mu0XlU3HhZMYCnr2var8+jjbavBHh/VCh4pBLsJW29rJ//B1jb4HlpMIaNIMH+W2/w==}
+  /pkg-types/0.3.5:
+    resolution: {integrity: sha512-VkxCBFVgQhNHYk9subx+HOhZ4jzynH11ah63LZsprTKwPCWG9pfWBlkElWFbvkP9BVR0dP1jS9xPdhaHQNK74Q==}
     dependencies:
-      jsonc-parser: 3.1.0
-      mlly: 0.5.14
-      pathe: 0.3.5
+      jsonc-parser: 3.2.0
+      mlly: 0.5.15
+      pathe: 0.3.8
     dev: true
 
   /pluralize/8.0.0:
@@ -3965,8 +3965,8 @@ packages:
       fast-glob: 3.2.12
       local-pkg: 0.4.2
       magic-string: 0.26.3
-      mlly: 0.5.14
-      pathe: 0.3.5
+      mlly: 0.5.15
+      pathe: 0.3.8
       scule: 0.3.2
       strip-literal: 0.4.1
       unplugin: 0.9.3
