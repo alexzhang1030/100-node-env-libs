@@ -21,7 +21,7 @@
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
     "@types/fs-extra": "9.0.13",
-    "@types/inquirer": "9.0.1",
+    "@types/inquirer": "9.0.2",
     "@types/node": "18.0.1",
     "@types/test-listen": "1.1.0",
     "eslint": "8.24.0",
