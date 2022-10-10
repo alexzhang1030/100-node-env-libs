@@ -33,7 +33,7 @@
     "magic-string": "0.26.6",
     "mlly": "0.5.16",
     "node-fetch": "3.2.10",
-    "pnpm": "7.13.2",
+    "pnpm": "7.13.4",
     "test-listen": "1.1.0",
     "tsx": "3.10.1",
     "typescript": "4.8.4",
