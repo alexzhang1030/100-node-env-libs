@@ -26,7 +26,7 @@ importers:
       tsx: 3.10.1
       typescript: 4.8.4
       unplugin-auto-import: 0.11.2
-      vitest: 0.24.1
+      vitest: 0.24.3
     devDependencies:
       '@alexzzz/eslint-config': 1.4.0_z4bbprzjrhnsfa24uvmcbu7f5q
       '@alexzzz/nl': 0.0.3
@@ -50,7 +50,7 @@ importers:
       tsx: 3.10.1
       typescript: 4.8.4
       unplugin-auto-import: 0.11.2
-      vitest: 0.24.1
+      vitest: 0.24.3
 
   packages/001.cac:
     specifiers:
@@ -4106,8 +4106,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.24.1:
-    resolution: {integrity: sha512-NKkK1xnDIOOr42pKBfGQQl6b6IWdFVBpG6ZS1T+nUlJuqcOiZ7lxjVwHy9wrtTYpJ0BWww9y6bSGYXubD29Nag==}
+  /vitest/0.24.3:
+    resolution: {integrity: sha512-aM0auuPPgMSstWvr851hB74g/LKaKBzSxcG3da7ejfZbx08Y21JpZmbmDYrMTCGhVZKqTGwzcnLMwyfz2WzkhQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
