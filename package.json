@@ -22,7 +22,7 @@
     "@commitlint/config-conventional": "17.1.0",
     "@types/fs-extra": "9.0.13",
     "@types/inquirer": "9.0.2",
-    "@types/node": "18.0.1",
+    "@types/node": "18.11.5",
     "@types/test-listen": "1.1.0",
     "eslint": "8.25.0",
     "fast-glob": "3.2.12",
