@@ -23,7 +23,7 @@ importers:
       node-fetch: 3.2.10
       pnpm: 7.13.5
       test-listen: 1.1.0
-      tsx: 3.10.1
+      tsx: 3.12.1
       typescript: 4.8.4
       unplugin-auto-import: 0.11.3
       vitest: 0.24.3
@@ -47,7 +47,7 @@ importers:
       node-fetch: 3.2.10
       pnpm: 7.13.5
       test-listen: 1.1.0
-      tsx: 3.10.1
+      tsx: 3.12.1
       typescript: 4.8.4
       unplugin-auto-import: 0.11.3
       vitest: 0.24.3
@@ -3928,8 +3928,8 @@ packages:
       typescript: 4.8.4
     dev: true
 
-  /tsx/3.10.1:
-    resolution: {integrity: sha512-Gh6xoW4xrdnLs6hYZydVHIQtrgmbZ/DbnJoLsYoI8MxhKAIyu8R7RyF0D5qg9UKi74Nmr4iSlijdz7Q43IGLyQ==}
+  /tsx/3.12.1:
+    resolution: {integrity: sha512-Rcg1x+rNe7qwlP8j7kx4VjP/pJo/V57k+17hlrn6a7FuQLNwkaw5W4JF75tYornNVCxkXdSUnqlIT8JY/ttvIw==}
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': 2.4.0
