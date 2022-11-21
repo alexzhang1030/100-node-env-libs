@@ -31,7 +31,7 @@
     "inquirer": "9.1.4",
     "lint-staged": "13.0.3",
     "magic-string": "0.26.7",
-    "mlly": "0.5.16",
+    "mlly": "1.0.0",
     "node-fetch": "3.2.10",
     "pnpm": "7.17.0",
     "test-listen": "1.1.0",
