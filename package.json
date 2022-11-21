@@ -18,8 +18,8 @@
   "devDependencies": {
     "@alexzzz/eslint-config": "1.4.0",
     "@alexzzz/nl": "0.0.3",
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
     "@types/fs-extra": "9.0.13",
     "@types/inquirer": "9.0.3",
     "@types/node": "18.11.5",
