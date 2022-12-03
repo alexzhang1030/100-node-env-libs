@@ -18,7 +18,7 @@ importers:
       husky: 8.0.2
       inquirer: 9.1.4
       lint-staged: 13.0.3
-      magic-string: 0.26.7
+      magic-string: 0.27.0
       mlly: 1.0.0
       node-fetch: 3.3.0
       pnpm: 7.17.1
@@ -42,7 +42,7 @@ importers:
       husky: 8.0.2
       inquirer: 9.1.4
       lint-staged: 13.0.3
-      magic-string: 0.26.7
+      magic-string: 0.27.0
       mlly: 1.0.0
       node-fetch: 3.3.0
       pnpm: 7.17.1
@@ -2903,6 +2903,13 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       sourcemap-codec: 1.4.8
+    dev: true
+
+  /magic-string/0.27.0:
+    resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
   /make-error/1.3.6:
