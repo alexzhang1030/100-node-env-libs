@@ -24,7 +24,7 @@
     "@types/inquirer": "9.0.3",
     "@types/node": "18.11.5",
     "@types/test-listen": "1.1.0",
-    "eslint": "8.28.0",
+    "eslint": "8.29.0",
     "fast-glob": "3.2.12",
     "fs-extra": "11.0.0",
     "husky": "8.0.2",
