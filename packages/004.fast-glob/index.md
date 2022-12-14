@@ -214,3 +214,5 @@ function dynamic(root, options) {
 ```
 
 最后再根据不同的 option 转换规则即可
+
+## 4. walkSync

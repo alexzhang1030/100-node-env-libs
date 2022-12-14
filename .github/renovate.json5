@@ -1,0 +1,19 @@
+{
+  extends: ['config:base', 'schedule:weekly', 'group:allNonMajor'],
+  labels: ['dependencies'],
+  pin: false,
+  rangeStrategy: 'bump',
+  node: false,
+  packageRules: [
+    {
+      depTypeList: ['peerDependencies'],
+      enabled: false,
+    },
+
+    {
+      matchUpdateTypes: ['major'],
+      matchPackageNames: ['vue'],
+      enabled: false,
+    },
+  ],
+}
