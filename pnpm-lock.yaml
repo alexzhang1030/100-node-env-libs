@@ -21,7 +21,7 @@ importers:
       magic-string: 0.26.7
       mlly: 1.0.0
       node-fetch: 3.3.0
-      pnpm: 7.24.3
+      pnpm: 7.30.0
       test-listen: 1.1.0
       tsx: 3.12.2
       typescript: 4.9.4
@@ -45,7 +45,7 @@ importers:
       magic-string: 0.26.7
       mlly: 1.0.0
       node-fetch: 3.3.0
-      pnpm: 7.24.3
+      pnpm: 7.30.0
       test-listen: 1.1.0
       tsx: 3.12.2
       typescript: 4.9.4
@@ -3394,8 +3394,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.24.3:
-    resolution: {integrity: sha512-0fpP1l16xOY8YwsATSLodNNBa7bitV1cNY475fioVLR7Thx5tkCtdp3xIlvZYX8ZoPtedLhGn3fICC409HQSNQ==}
+  /pnpm/7.30.0:
+    resolution: {integrity: sha512-6SUdrWSZ4qvQ4uBVg7smnabVKOFrT7DgSz2NfViG54nRii4ODB395qmHprBiv5WBdlC/jZYBn99fSfmzIMI3WQ==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
