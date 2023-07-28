@@ -30,7 +30,7 @@
     "husky": "8.0.2",
     "inquirer": "9.1.4",
     "lint-staged": "13.0.3",
-    "magic-string": "0.26.7",
+    "magic-string": "0.30.2",
     "mlly": "1.0.0",
     "node-fetch": "3.3.0",
     "pnpm": "7.30.0",
